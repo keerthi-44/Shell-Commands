@@ -15,3 +15,7 @@ df -h
 free -g
 
 nproc
+
+ps -ef
+
+ps -ef | grep "amazon"
