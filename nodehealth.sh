@@ -9,9 +9,11 @@
 #Version: v1
 ######################
 
-set -x #debug mode
+echo "Print the disk space"
 df -h 
 
+echo "Print the memory"
 free -g
 
+echo "Print the CPU"
 nproc
