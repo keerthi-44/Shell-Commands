@@ -16,6 +16,6 @@ free -g
 
 nproc
 
-ps -ef
+ps -ef #we get entire detials of the processes
 
-ps -ef | grep "amazon"
+ps -ef | grep "amazon" #out of the processes we get amazon
