@@ -10,6 +10,9 @@
 ######################
 
 set -x #debug mode
+set -e #exit the script when there is an error
+set -o pipefail
+
 df -h 
 
 free -g
@@ -19,3 +22,7 @@ nproc
 ps -ef #we get entire detials of the processes
 
 ps -ef | grep "amazon" #out of the processes we get amazon
+
+ps -ef | grep "amazon" | awk -F" " '{print $2}' #filter the output
+
+ps -ef | grep name test
